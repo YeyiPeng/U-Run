@@ -21,6 +21,10 @@
 		#ok{
 			text-align: center;
 		}
+		#ok-text {
+			padding-top: 70px;
+			font-size: 40px;
+		}
 		.btn-floating.btn-large{
 			width: 200px;
 			height: 200px;
@@ -30,19 +34,25 @@
 			margin-top: 200px;
 		}
 	</style>
+	<script type="text/javascript">
+		function app(e) {
+			var name = e.innerHTML;
+			document.getElementById("btn-drop").innerHTML = name;
+		}
+	</script>
 </head>
 <body class="grey lighten-2">
 	<div id="screen" class="z-depth-4">
 		<div id="bu">
 			<ul id="dropdown2" class="dropdown-content">
-				<li><a href="#!">Proj A</a></li>
-				<li><a href="#!">Proj B</a></li>
-				<li><a href="#!">Proj C</a></li>
+				<li><a href="#!" onclick="app(this)">Proj A</a></li>
+				<li><a href="#!" onclick="app(this)">Proj B</a></li>
+				<li><a href="#!" onclick="app(this)">Proj C</a></li>
 			</ul>
-			<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
+			<a class="btn dropdown-button" href="#!" data-activates="dropdown2" id="btn-drop">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
 		</div>
 		<div id="ok">
-			<a class="btn-floating btn-large waves-effect waves-light red">ok</a>
+			<a class="btn-floating btn-large waves-effect waves-light red" id="ok-text">ok</a>
 		</div>
 	</div>
 </body>
