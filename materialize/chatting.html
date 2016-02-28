@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatting</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+		#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		.btn{
+			float: right;
+		}
+		#namepswd{
+			margin-top: 371px;
+		}
+		#person{
+			margin-top: -56px;
+			float: right;
+		}
+		#back{
+			margin-top: -56px;
+			float: left;
+		}
+		.btn-floating.btn-large{
+			width: 50px;
+			height: 50px;
+		}
+		#icon1{
+			margin-top: -2px;
+		}
+	</style>
+	<script type="text/javascript">
+		function send() {
+window.location.href = "chatting2.html"
+		}
+	</script>
+
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+		<div class="nav-wrapper teal lighten-2" id="app-bar">
+				<div id ="title">Wang</div>
+				<a id="person"class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons" id="icon1">person</i>
+				</a>  
+				<a id="back"class="btn-floating btn-large waves-effect waves-light black" href="chat2.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i>
+				</a> 				      			     				
+			</div>
+		</nav>
+		<div class="col s12 m8 offset-m2 l6 offset-l3">
+			<div class="card-panel grey lighten-5 z-depth-1">
+				<div class="row valign-wrapper">
+					<div class="col s2">
+						<img src="wang.jpg" alt="" class="circle responsive-img">
+					</div>
+					<div class="col s10">
+						<span class="black-text">
+							Do you wanna go for running?						
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row" id="namepswd">
+			<form class="col s12">      
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="username" type="text" class="validate">
+						<label for="username">Sorry, I have a 330 presentation.</label>
+					</div>
+				</div>
+				<br>
+
+			</form>
+			<button class="btn waves-effect waves-light" type="submit" name="action" onclick="send()">Send
+				<i class="material-icons right">send</i>
+			</button>
+		</div>
+
+	</div>
+</body>
+</html>

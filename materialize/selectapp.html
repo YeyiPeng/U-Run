@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slect</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+
+		#bu{
+			text-align: center;
+		}
+		#ok{
+			text-align: center;
+		}
+		#ok-text {
+			padding-top: 70px;
+			font-size: 40px;
+		}
+		.btn-floating.btn-large{
+			width: 200px;
+			height: 200px;
+		}
+		.btn-floating{
+			text-align: center;
+			margin-top: 200px;
+		}
+	</style>
+	<script type="text/javascript">
+		function app(e) {
+			var name = e.innerHTML;
+			document.getElementById("btn-drop").innerHTML = name;
+		}
+	</script>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<div id="bu">
+			<ul id="dropdown2" class="dropdown-content">
+			<li><a href="#!" onclick="app(this)">App A</a></li>
+				<li><a href="#!" onclick="app(this)">App B</a></li>
+				<li><a href="#!" onclick="app(this)">App C</a></li>
+			</ul>
+			<a class="btn dropdown-button" href="#!" data-activates="dropdown2" id="btn-drop">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a>
+		</div>
+		<div id="ok">
+			<a class="btn-floating btn-large waves-effect waves-light red" id="ok-text">ok</a>
+		</div>
+	</div>
+</body>
+</html>
