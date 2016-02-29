@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chatting</title>
+	<title>Chattings</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -22,7 +22,14 @@
 			float: right;
 		}
 		#namepswd{
-			margin-top: 371px;
+			margin-top: 238px;
+		}
+		.btn-floating.btn-large{
+			width: 50px;
+			height: 50px;
+		}
+		#bottombutton{
+			margin-top:180px;
 		}
 		#person{
 			margin-top: -56px;
@@ -36,21 +43,16 @@
 			width: 50px;
 			height: 50px;
 		}
-		#icon1{
+        #icon1{
 			margin-top: -2px;
 		}
 	</style>
-	<script type="text/javascript">
-		function send() {
-window.location.href = "chatting2.html"
-		}
-	</script>
 
 </head>
 <body class="grey lighten-2">
 	<div id="screen" class="z-depth-4">
 		<nav>
-		<div class="nav-wrapper teal lighten-2" id="app-bar">
+			<div class="nav-wrapper teal lighten-2" id="app-bar">
 				<div id ="title">Wang</div>
 				<a id="person"class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons" id="icon1">person</i>
 				</a>  
@@ -58,11 +60,12 @@ window.location.href = "chatting2.html"
 				</a> 				      			     				
 			</div>
 		</nav>
+
 		<div class="col s12 m8 offset-m2 l6 offset-l3">
 			<div class="card-panel grey lighten-5 z-depth-1">
 				<div class="row valign-wrapper">
 					<div class="col s2">
-						<img src="wang.jpg" alt="" class="circle responsive-img">
+						<img src="img/wang.jpg" alt="" class="circle responsive-img">
 					</div>
 					<div class="col s10">
 						<span class="black-text">
@@ -74,18 +77,36 @@ window.location.href = "chatting2.html"
 		</div>
 
 
+		<div class="col s12 m8 offset-m2 l6 offset-l3">
+			<div class="card-panel grey lighten-5 z-depth-1">
+				<div class="row valign-wrapper">
+					<div class="col s8">
+						<span class="black-text">
+							Sorry, I have a 330 presentation.
+						</span>
+					</div>
+					<div class="col s16">
+						<img src="img/touxiang.jpg" width="50px" height="50px" alt="" class="circle responsive-img">
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
 		<div class="row" id="namepswd">
 			<form class="col s12">      
 				<div class="row">
 					<div class="input-field col s12">
 						<input id="username" type="text" class="validate">
-						<label for="username">Sorry, I have a 330 presentation.</label>
+						<label for="username">Type here.</label>
 					</div>
 				</div>
 				<br>
 
 			</form>
-			<button class="btn waves-effect waves-light" type="submit" name="action" onclick="send()">Send
+			<button class="btn waves-effect waves-light" type="submit" name="action">Send
 				<i class="material-icons right">send</i>
 			</button>
 		</div>
