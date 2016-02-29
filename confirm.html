@@ -64,19 +64,30 @@
 		#word{
 			color: white;
 		}
+
 	</style>
+	<script type="text/javascript">
+		function app(e) {
+			name = e.innerHTML;
+			document.getElementById("btn-drop").innerHTML = name;
+		}
+		function okay() {
+			document.getElementById("att").innerHTML = "SUCCESS";
+			document.getElementById("att-p").innerHTML = name;
+		}
+	</script>
 </head>
 <body class="grey lighten-2">
 
 	<div id="screen" class="z-depth-4">
 		<div id="bu">
 			<ul id="dropdown2" class="dropdown-content">
-				<li><a href="#!">Fitness Converter</a></li>
-				<li><a href="#!">Daily Workouts</a></li>
-				<li><a href="#!">Perfect Diet Tracker</a></li>
+				<li><a href="#!" onclick="app(this)">Fitness Converter</a></li>
+				<li><a href="#!" onclick="app(this)">Daily Workouts</a></li>
+				<li><a href="#!" onclick="app(this)">Perfect Diet Tracker</a></li>
 			</ul>
-			<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Choose App<i class="mdi-navigation-arrow-drop-down right"></i></a>
-				<a class="btn-floating black" id="back"><i class="material-icons " id="icon1">keyboard_arrow_left</i>
+			<a class="btn dropdown-button" href="#!" data-activates="dropdown2" id="btn-drop">Choose App<i class="mdi-navigation-arrow-drop-down right"></i></a>
+				<a class="btn-floating black" id="back" href="homepage.html"><i class="material-icons " id="icon1">keyboard_arrow_left</i>
 				</a>   				      			     				
 
 		</div>
@@ -84,14 +95,14 @@
       <div class="row">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">Attention</span>
-              <p>Do you allow this webpage to access your personal information?</p>
+              <span class="card-title" id="att">Attention</span>
+              <p id="att-p">Do you allow this webpage to access your personal information?</p>
             </div>
           </div>
       </div>
 
 		<div id="ok">
-			<a class="btn-floating btn-large waves-effect waves-light blue">
+			<a class="btn-floating btn-large waves-effect waves-light blue" onclick="okay()">
 				<div id= "OK"> Upload</div>
 		    </a>
 		</div>

@@ -13,21 +13,18 @@
 			margin-right: auto;
 			height: 700px;
 			width: 400px;
-			padding-top:50px;
+			padding-top: 20px;
 			background-color: white;
 		}
 		#navi{
 			margin-left: 268px;
 
 		}
-
 		#word{
 			margin-top: 2px;
 			text-align: center;
 			font-size: 25px;
 		}
-
-
 		#avatar2{
 			text-align: center;
 			margin-bottom: 130px;
@@ -69,10 +66,9 @@
 			padding-top: 10px;
 		}	
 		#button{
-			margin-top: -48px;
+			margin-top: -31px;
 			margin-bottom: 0;
 		}
-		
 		.btn-floating.btn-large{
 			width: 250px;
 			height: 250px;
@@ -80,12 +76,20 @@
 			font-size: 40px;
 			padding-top: 100px;
 		}
-
+		#exit {
+			float: right;
+			margin-top: -65px;
+			margin-right: 10px;
+			color: #4db6ac;
+		}
 	</style>
 </head>
 <body class="grey lighten-2">
 	<div id="screen" class="z-depth-4">
 		<p id="word">Project Accomplished</p>
+		<a class="waves-effect waves-light" id="exit" href="log_in.html">
+	      	<i class="material-icons" id="left-arrow">exit_to_app</i>
+	    </a>
 		<div class="progress">
 			<div class="determinate" style="width: 70%"></div>
 		</div>
@@ -117,15 +121,15 @@
 
 		<div id="button1"class="row">
 			<div class="row z-depth-1">
-		           <a class="tab" id="chat" href="selectapp.html">
+		           <a class="tab" id="chat" href="confirm.html">
 			           <div id="tab-div" class="col s4">
 				          <i class="material-icons">update</i>
 				             <div id="tab-name">Data</div>
 			           </div>
 		           </a>
 
-			       <a class="tab" href="selectpro.html">
-				       <div id="tab-div" class="col s4">
+			       <a class="tab">
+				       <div id="tab-div" class="col s4" style="background-color: #45a49b;">
 					      <i class="material-icons">android</i>
 					         <div id="tab-name">Projects</div>
 				       </div>
