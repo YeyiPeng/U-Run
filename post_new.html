@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post New Things</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+			#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		#add{
+			position: relative;
+			left:180px;
+            top:40px;
+		}
+
+	</style>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
+		    Post New Things   
+	      	</div>
+	      	<i class="material-icons">supervisor_account</i>
+    	</nav>
+
+		<div class="row" id="namepswd">
+    		<form class="col s12">      
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="pro_name" type="text" maxlength="26px" style="width:200px;margin-top:10px;margin-left:20px">
+          				<label for="pro_name" style="margin-left:20px">Project Name:</label>
+        			</div>
+      			</div>
+      			<div class="rows">
+      				<div class="input-field col s12">
+      					
+      					<input id="pro_sum" type="text" maxlength="26px" style="width:200px;margin-top:10px;margin-left:20px">
+      					<label for="pro_sum" style="margin-left:20px">Project Summary:</label>
+      				</div>
+  		
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="pro_goal" type="text" maxlength="26px" style="width:200px;margin-top:10px;margin-left:20px">
+          				<label for="pro_goal" style="margin-left:20px">Project Goal:</label>
+        			</div>
+        		</div>
+        		<div class="row">
+        			<div class="input-field col s12">
+          				<input id="tar_dona" type="text" maxlength="20px" style="width:200px;margin-top:10px;margin-left:20px">
+          				<label for="tar_dona" style="margin-left:20px">Target Donation:</label>
+        			</div>
+      			</div> 
+      			
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="tar_vol" type="text" maxlength="20px" style="width:200px;margin-top:10px;margin-left:20px">
+          				<label for="tar_vol" style="margin-left:20px">Target Volunteers:</label>
+        			</div>
+        		</div>     
+          	</form>
+  		</div >
+  		<div id="add">
+  		  <a class="btn-floating btn-large waves-effect waves-light teal lighten-2">
+  		  	<i class="material-icons" style="font-size:40px;">add</i>
+  		  </a>
+  		</div>
+  	</div>
+</body>
+</html>
