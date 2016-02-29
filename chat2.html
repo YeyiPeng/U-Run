@@ -36,7 +36,7 @@
 			float: left;
 		}
 		#bottombutton{
-			margin-top:185px;
+			margin-top:179px;
 		}
 		#icon1{
 			margin-top:-11px; 
@@ -44,10 +44,6 @@
 		.btn-floating.btn-large{
 			width: 50px;
 			height: 50px;
-		}
-		#add{
-			margin-top: -56px;
-			float: right;
 		}
         .tab {	
 			color: white;
@@ -65,43 +61,67 @@
 		.material-icons {
 			padding-top: 10px;
 		}		
+		#back{
+			float: left;
+			vertical-align: bottom;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#back:hover {
+			background-color: #45a49b;
+		}
+		#add {
+			float: right;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#add:hover {
+			background-color: #45a49b;
+		}
+		#title {
+			position: relative;
+			left: 20%;
+			float: left;
+		}
 	</style>
 </head>
 <body class="grey lighten-2">
 	<div id="screen" class="z-depth-4">
 		<nav>
 	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
-				<div id ="title">Chat</div>
-				<a id="add"class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons" id="icon1">add</i>
-				</a>   				      			     				
+	      		<a id="back"class="waves-effect waves-light" href="homepage.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i></a> 
+				<div id ="title">Chats</div>
+				<a id="add" class="waves-effect waves-light"><i class="material-icons" id="icon1">add</i></a>					 				      			     				
 			</div>
     	</nav>
 
 		<div class="collection">
     		<a href="chatting.html" class="collection-item">    			
     			<img src="img/wang.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
-    			<div class="title" style="">Wang</div>
+    			<div class="title" style="margin-left: 70px;">Wang</div>
     			<p class="info">
     				Do you wanna go for running? <br> 02/26/2016
 				</p>   			
     		</a>
     		<a href="#!" class="collection-item">    			
     			<img src="img/zhu.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
-    			<div class="title" style="">Zhu</div>
+    			<div class="title" style="margin-left: 70px;">Zhu</div>
     			<p class="info">
     				Sorry I don`t have time. <br> 02/20/2016
 				</p>   			
     		</a>
     		<a href="#!" class="collection-item">    			
     			<img src="img/zhang.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
-    			<div class="title" style="">Zhang</div>
+    			<div class="title" style="margin-left: 70px;">Zhang</div>
     			<p class="info">
     				Nice run today! <br> 02/15/2016
 				</p>   			
     		</a>
     		<a href="#!" class="collection-item">    			
     			<img src="img/peng.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
-    			<div class="title" style="">Peng</div>
+    			<div class="title" style="margin-left: 70px;">Peng</div>
     			<p class="info">
     				Bye Bye! <br> 02/02/2016
 				</p>   			
@@ -117,7 +137,7 @@
 			           </div>
 		           </a>
 
-			       <a class="tab" href="">
+			       <a class="tab" href="contacts.html">
 				       <div id="tab-div" class="col s4">
 					      <i class="material-icons">supervisor_account</i>
 					         <div id="tab-name">Contacts</div>

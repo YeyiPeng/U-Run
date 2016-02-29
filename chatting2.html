@@ -35,16 +35,37 @@
 			margin-top: -56px;
 			float: right;
 		}
-		#back{
-			margin-top: -56px;
-			float: left;
-		}
 		.btn-floating.btn-large{
 			width: 50px;
 			height: 50px;
 		}
         #icon1{
 			margin-top: -2px;
+		}
+		#back{
+			float: left;
+			vertical-align: bottom;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#back:hover {
+			background-color: #45a49b;
+		}
+		#add {
+			float: right;
+			vertical-align: bottom;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#add:hover {
+			background-color: #45a49b;
+		}
+		#title {
+			position: relative;
+			left: 20%;
+			float: left;
 		}
 	</style>
 
@@ -53,11 +74,9 @@
 	<div id="screen" class="z-depth-4">
 		<nav>
 			<div class="nav-wrapper teal lighten-2" id="app-bar">
+				<a id="back" class="waves-effect waves-light" href="chat2.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i></a>
 				<div id ="title">Wang</div>
-				<a id="person"class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons" id="icon1">person</i>
-				</a>  
-				<a id="back"class="btn-floating btn-large waves-effect waves-light black" href="chat2.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i>
-				</a> 				      			     				
+				<a id="add"class="waves-effect waves-light"><i class="material-icons" id="icon1">person</i></a>  				      			     				
 			</div>
 		</nav>
 
