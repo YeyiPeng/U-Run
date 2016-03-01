@@ -90,15 +90,25 @@
 		.material-icons {
 			padding-top: 10px;
 		}		
-		
-
+		#exit {
+			float: right;
+			margin-top: -10px;
+			margin-right: 10px;
+		}
+		#title {
+			font-size: 30px;
+			margin-left: 30px;
+		}
 	</style>
 </head>
 <body class="grey lighten-2">
 	<div id="screen" class="z-depth-4">
 		<nav>
 	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
-		        My Project
+		        <span id="title">My Project</span>
+		        <a class="waves-effect waves-light" id="exit" href="log_in.html">
+	      			<i class="material-icons" id="left-arrow">exit_to_app</i>
+	    		</a>
 	      	</div>
     	</nav>
 
