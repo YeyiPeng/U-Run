@@ -20,9 +20,17 @@
 		}
 		#add{
 			position: relative;
-			left:180px;
-            top:40px;
+			left:150px;
+      top:40px;
 		}
+    .input-bar {
+      width:160px;
+      margin-top:10px;
+    }
+    #namepswd {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
 
 	</style>
 </head>
@@ -38,41 +46,41 @@
 		<div class="row" id="namepswd">
     		<form class="col s12">      
       			<div class="row">
-        			<div class="input-field col s12">
-          				<input id="pro_name" type="text" maxlength="26px" style="width:200px;margin-top:10px;margin-left:20px">
-          				<label for="pro_name" style="margin-left:20px">Project Name:</label>
+        			<div class="input-field col s12" id="inputbar">
+          				<input id="pro_name" type="text" maxlength="26px" class="input-bar">
+          				<label for="pro_name">Project Name:</label>
         			</div>
       			</div>
-      			<div class="rows">
+      			<div class="row">
       				<div class="input-field col s12">
       					
-      					<input id="pro_sum" type="text" maxlength="26px" style="width:200px;margin-top:10px;margin-left:20px">
-      					<label for="pro_sum" style="margin-left:20px">Project Summary:</label>
+      					<input id="pro_sum" type="text" class="input-bar">
+      					<label for="pro_sum">Project Summary:</label>
       				</div>
   		
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="pro_goal" type="text" maxlength="26px" style="width:200px;margin-top:10px;margin-left:20px">
-          				<label for="pro_goal" style="margin-left:20px">Project Goal:</label>
+          				<input id="pro_goal" type="text" class="input-bar">
+          				<label for="pro_goal">Project Goal:</label>
         			</div>
         		</div>
         		<div class="row">
         			<div class="input-field col s12">
-          				<input id="tar_dona" type="text" maxlength="20px" style="width:200px;margin-top:10px;margin-left:20px">
-          				<label for="tar_dona" style="margin-left:20px">Target Donation:</label>
+          				<input id="tar_dona" type="text" maxlength="20px" class="input-bar">
+          				<label for="tar_dona">Target Donation:</label>
         			</div>
       			</div> 
       			
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="tar_vol" type="text" maxlength="20px" style="width:200px;margin-top:10px;margin-left:20px">
-          				<label for="tar_vol" style="margin-left:20px">Target Volunteers:</label>
+          				<input id="tar_vol" type="text" class="input-bar">
+          				<label for="tar_vol">Target Volunteers:</label>
         			</div>
         		</div>     
           	</form>
   		</div >
   		<div id="add">
-  		  <a class="btn-floating btn-large waves-effect waves-light teal lighten-2">
+  		  <a class="btn-floating btn-large waves-effect waves-light teal lighten-2" href="discovery.html">
   		  	<i class="material-icons" style="font-size:40px;">add</i>
   		  </a>
   		</div>
