@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirm</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+			background-image:url("img/Chicago.jpg");
+		}
+
+		#bu{
+			margin-left: 8px;
+			text-align: center;
+		}
+		#ok{
+			margin-top: 0px;
+			text-align: center;
+		}
+		#OK{
+			text-align: bottom;
+			margin-top: 36%;
+			font-size: 30px;
+		}
+		.btn-floating.btn-large{
+			width: 200px;
+			height: 200px;
+			margin-top: -40px;
+		}
+		.btn-floating{
+			text-align:center;
+			margin-top: 200px;
+		}
+		.row{
+			width: 300px;
+			height: 200px;
+			text-align:center;
+			margin-top:120px;
+			margin-left: 13%;
+		}
+		#click{
+			margin-top: 40px;
+			text-align: center;
+		}
+		#back{
+			float: left;
+			margin-top: 1px;
+		}
+		#icon1{
+			font-size: 40px;
+			margin-top: -9px;
+			margin-left: -5px;
+		}
+		.material-icons {
+			padding-top: 10px;
+		}
+		#word{
+			color: white;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function app(e) {
+			name = e.innerHTML;
+			document.getElementById("btn-drop").innerHTML = name;
+		}
+		function okay() {
+			document.getElementById("att").innerHTML = "SUCCESS";
+			document.getElementById("att-p").innerHTML = name;
+		}
+	</script>
+</head>
+<body class="grey lighten-2">
+
+	<div id="screen" class="z-depth-4">
+		<div id="bu">
+			<ul id="dropdown2" class="dropdown-content">
+				<li><a href="#!" onclick="app(this)">Fitness Converter</a></li>
+				<li><a href="#!" onclick="app(this)">Daily Workouts</a></li>
+				<li><a href="#!" onclick="app(this)">Perfect Diet Tracker</a></li>
+			</ul>
+			<a class="btn dropdown-button" href="#!" data-activates="dropdown2" id="btn-drop">Choose App<i class="mdi-navigation-arrow-drop-down right"></i></a>
+				<a class="btn-floating black" id="back" href="homepage.html"><i class="material-icons " id="icon1">keyboard_arrow_left</i>
+				</a>   				      			     				
+
+		</div>
+
+      <div class="row">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title" id="att">Attention</span>
+              <p id="att-p">Do you allow this webpage to access your personal information?</p>
+            </div>
+          </div>
+      </div>
+
+		<div id="ok">
+			<a class="btn-floating btn-large waves-effect waves-light blue" onclick="okay()">
+				<div id= "OK"> Upload</div>
+		    </a>
+		</div>
+
+		<form action="#">
+			<p id="click">
+				<input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+				<label for="filled-in-box">
+					<span id="word">Do not ask me again.</span>
+					</label>
+			</p>
+		</form>
+        
+         
+	</div>
+</body>
+</html>

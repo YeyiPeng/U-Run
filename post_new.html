@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post New Things</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+			#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		#add{
+			position: relative;
+			left:150px;
+      top:40px;
+		}
+    .input-bar {
+      width:160px;
+      margin-top:10px;
+    }
+    #namepswd {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    #back{
+      float: left;
+      vertical-align: bottom;
+      background-color: #4db6ac;
+      width: 90px;
+      height: 100%;
+    }
+    #back:hover {
+      background-color: #45a49b;
+    }
+    #title {
+      position: relative;
+      left: 10%;
+      float: left;
+    }
+
+	</style>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
+            <a id="back" class="waves-effect waves-light" href="discovery_charity.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i></a>
+  		      <div id="title">Post New Things</div> 
+  	      	</div>
+    	</nav>
+
+		<div class="row" id="namepswd">
+    		<form class="col s12">      
+      			<div class="row">
+        			<div class="input-field col s12" id="inputbar">
+          				<input id="pro_name" type="text" maxlength="26px" class="input-bar">
+          				<label for="pro_name">Project Name:</label>
+        			</div>
+      			</div>
+      			<div class="row">
+      				<div class="input-field col s12">
+      					
+      					<input id="pro_sum" type="text" class="input-bar">
+      					<label for="pro_sum">Project Summary:</label>
+      				</div>
+  		
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="pro_goal" type="text" class="input-bar">
+          				<label for="pro_goal">Project Goal:</label>
+        			</div>
+        		</div>
+        		<div class="row">
+        			<div class="input-field col s12">
+          				<input id="tar_dona" type="text" maxlength="20px" class="input-bar">
+          				<label for="tar_dona">Target Donation:</label>
+        			</div>
+      			</div> 
+      			
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="tar_vol" type="text" class="input-bar">
+          				<label for="tar_vol">Target Volunteers:</label>
+        			</div>
+        		</div>     
+          	</form>
+  		</div >
+  		<div id="add">
+  		  <a class="btn-floating btn-large waves-effect waves-light teal lighten-2" href="discovery_charity.html">
+  		  	<i class="material-icons" style="font-size:40px;">add</i>
+  		  </a>
+  		</div>
+  	</div>
+</body>
+</html>

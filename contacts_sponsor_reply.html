@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log In</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+		#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		#nav-bar {
+			margin-top: 179px;			
+		}
+		.info {
+			color: black;
+			font-size: 10px;
+			margin-left: 70px;
+			margin-bottom: 0;
+		}
+		.title {
+		 	margin-left: 70px;
+		}
+		#avatar {
+			float: left;
+		}
+		.tab {	
+			color: white;
+			height: 150px;
+		}
+		#tab-div-contacts, #tab-div-stats {
+			height: 65px;
+			text-align: center;
+			font-size: 15px;
+			background-color: #4db6ac;
+		}
+		#tab-div-stats:hover{
+			background-color: #45a49b;
+		}
+		.material-icons {
+			padding-top: 10px;
+		}
+		#tab-div-contacts{
+			background-color: #45a49b;
+		}
+		#exit {
+			float: right;
+			bottom: 10px;
+			right: 10px;
+		}
+	</style>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
+	      		<span>Contacts</span>
+		        <a class="waves-effect waves-light" id="exit" href="log_in.html">
+	      			<i class="material-icons" id="left-arrow">exit_to_app</i>
+	      		</a>
+	      	</div>
+    	</nav>
+
+		<div class="collection">
+    		<a href="#!" class="collection-item" onclick="cutomer_service_1.html">    			
+    			<img src="img/mario.png" width="50px" height="50px" alt="" id="avatar">
+    			<div class="title" style="">Customer Service 1</div>
+    			<p class="info">
+    				Department of Advertisement <br> Last time chat: 22:00pm
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/luigi.png" width="50px" height="50px" alt="" id="avatar">
+    			<div class="title" style="">Customer Service 2</div>
+    			<p class="info">
+    				Department of Advertisement <br> Last time chat: 22:00pm
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/wario.png" width="50px" height="50px" alt="" id="avatar">
+    			<div class="title" style="">Customer Service 3</div>
+    			<p class="info">
+    				Department of Advertisement <br> Last time chat: 22:00pm
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/waluigi.png" width="50px" height="50px" alt="" id="avatar">
+    			<div class="title" style="">Customer Service 4</div>
+    			<p class="info">
+    				Department of Advertisement <br> Last time chat: 22:00pm
+				</p>   			
+    		</a>
+  		</div>
+
+  		
+	    <div class="row z-depth-1" id="nav-bar" >
+		    <a class="tab" id="chat" href="">
+			    <div id="tab-div-contacts"  class="col s6">
+				    <i class="material-icons">supervisor_account</i>
+				    <div id="tab-name">Contacts</div>
+			    </div>
+		    </a>
+
+			<a class="tab" href="">
+				<div id="tab-div-stats" class="col s6">
+					<i class="material-icons">trending_up</i>
+					<div id="tab-name">Statistics</div>
+				</div>
+			</a>
+
+			
+		</div>
+
+	</div>
+</body>
+</html>

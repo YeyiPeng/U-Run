@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chats</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+		#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		#nav-bar {
+			margin-left: 25%;
+			margin-top: 180px;"
+			
+		}
+		.info {
+			color: black;
+			font-size: 10px;
+			margin-left: 70px;
+			margin-bottom: 0;
+		}
+		.title {
+		 	margin-left: 70px;
+		}
+		#avatar {
+			float: left;
+		}
+		#bottombutton{
+			margin-top:179px;
+		}
+		#icon1{
+			margin-top:-11px; 
+		}
+		.btn-floating.btn-large{
+			width: 50px;
+			height: 50px;
+		}
+        .tab {	
+			color: white;
+			height: 150px;
+		}
+		#tab-div {
+			height: 65px;
+			text-align: center;
+			font-size: 15px;
+			background-color: #4db6ac;
+		}
+		#tab-div:hover{
+			background-color: #45a49b;
+		}
+		.material-icons {
+			padding-top: 10px;
+		}		
+		#back{
+			float: left;
+			vertical-align: bottom;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#back:hover {
+			background-color: #45a49b;
+		}
+		#add {
+			float: right;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#add:hover {
+			background-color: #45a49b;
+		}
+		#title {
+			position: relative;
+			left: 20%;
+			float: left;
+		}
+	</style>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
+	      		<a id="back"class="waves-effect waves-light" href="homepage.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i></a> 
+				<div id ="title">Chats</div>
+				<a id="add" class="waves-effect waves-light"><i class="material-icons" id="icon1">add</i></a>					 				      			     				
+			</div>
+    	</nav>
+
+		<div class="collection">
+    		<a href="chatting.html" class="collection-item">    			
+    			<img src="img/wang.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+    			<div class="title" style="margin-left: 70px;">Wang</div>
+    			<p class="info">
+    				Do you wanna go for running? <br> 02/26/2016
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/zhu.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+    			<div class="title" style="margin-left: 70px;">Zhu</div>
+    			<p class="info">
+    				Sorry I don`t have time. <br> 02/20/2016
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/zhang.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+    			<div class="title" style="margin-left: 70px;">Zhang</div>
+    			<p class="info">
+    				Nice run today! <br> 02/15/2016
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/peng.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+    			<div class="title" style="margin-left: 70px;">Peng</div>
+    			<p class="info">
+    				Bye Bye! <br> 02/02/2016
+				</p>   			
+    		</a>
+  		</div>
+        <div class="teal lighten-2" id="bottombutton">
+	        
+		       <div class="row z-depth-1">
+		           <a class="tab" id="chat" href="">
+			           <div id="tab-div" class="col s4" style="background-color: #45a49b;">
+				          <i class="material-icons">chat</i>
+				             <div id="tab-name">Chat</div>
+			           </div>
+		           </a>
+
+			       <a class="tab" href="contacts.html">
+				       <div id="tab-div" class="col s4">
+					      <i class="material-icons">supervisor_account</i>
+					         <div id="tab-name">Contacts</div>
+				       </div>
+			       </a>
+
+			       <a class="tab" href="discovery.html">
+				       <div id="tab-div" >
+				          <i class="material-icons">explore</i>
+				             <div id="tab-name">Discovery</div>
+				       </div>
+			       </a>
+		      </div>
+	   
+			
+		</div>
+
+	</div>
+</body>
+</html>

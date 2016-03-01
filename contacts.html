@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacts</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+		#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		#nav-bar {
+			margin-left: 25%;
+			margin-top: 182px;
+
+		}
+		#icon1{
+			margin-top: -11px;
+		}
+		.info {
+			color: black;
+			font-size: 10px;
+			margin-left: 70px;
+			margin-bottom: 0;
+		}
+		.title {
+			margin-left: 70px;
+		}
+		#avatar {
+			float: left;
+		}
+		.collection-item{
+			height: 95px;
+		}
+        .tab {	
+			color: white;
+			height: 150px;
+		}
+		#tab-div {
+			height: 65px;
+			text-align: center;
+			font-size: 15px;
+			background-color: #4db6ac;
+		}
+		#tab-div:hover{
+			background-color: #45a49b;
+		}
+		.material-icons {
+			padding-top: 10px;
+		}		
+
+		.btn-floating.btn-large{
+			width: 50px;
+			height: 50px;
+		}
+		#bottombutton{
+			margin-top:182px;
+		}
+		#add {
+			float: right;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#add:hover {
+			background-color: #45a49b;
+		}
+		#title {
+			position: relative;
+			left: 40%;
+			float: left;
+		}
+	</style>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+			<div class="nav-wrapper teal lighten-2" id="app-bar">
+				<div id ="title">Contacts</div>
+				<a id="add" class="waves-effect waves-light"><i class="material-icons" id="icon1">person_add</i>
+				</a>   				      			     				
+			</div>
+		</nav>
+
+		<div class="collection">
+			<a href="#!" class="collection-item">    			
+				<img src="img/peng.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+				<div class="title" style="">Peng</div>  		
+			</a>
+			<a href="#!" class="collection-item">    			
+				<img src="img/wang.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+				<div class="title" style="">Wang</div> 					
+			</a>
+			<a href="#!" class="collection-item">    			
+				<img src="img/zhang.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+				<div class="title" style="">Zhang</div> 			
+			</a>
+			<a href="#!" class="collection-item">    			
+				<img src="img/zhu.jpg" width="50px" height="50px" alt="" class="circle" id="avatar">
+				<div class="title" style="">Zhu</div>  			
+			</a>
+		</div>
+		<div class="teal lighten-2" id="bottombutton">
+	        
+		       <div class="row z-depth-1">
+		           <a class="tab" id="chat" href="chat2.html">
+			           <div id="tab-div" class="col s4">
+				          <i class="material-icons">chat</i>
+				             <div id="tab-name">Chat</div>
+			           </div>
+		           </a>
+
+			       <a class="tab" href="">
+				       <div id="tab-div" class="col s4">
+					      <i class="material-icons">supervisor_account</i>
+					         <div id="tab-name">Contacts</div>
+				       </div>
+			       </a>
+
+			       <a class="tab" href="discovery.html">
+				       <div id="tab-div" >
+				          <i class="material-icons">explore</i>
+				             <div id="tab-name">Discovery</div>
+				       </div>
+			       </a>
+		      </div>
+	   
+			
+		</div>
+
+
+
+	</div>
+</body>
+</html>
