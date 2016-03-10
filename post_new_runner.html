@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post New Things</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
+	<style type="text/css">
+		#screen {
+			margin-left: auto;
+			margin-right: auto;
+			height: 700px;
+			width: 400px;
+			background-color: white;
+		}
+			#app-bar {
+			text-align: center;
+			font-size: 150%;
+		}
+		#add{
+			position: relative;
+			left:170px;
+      top:130px;
+		}
+
+    #input {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top:60px;
+    }
+    #back{
+      float: left;
+      vertical-align: bottom;
+      background-color: #4db6ac;
+      width: 90px;
+      height: 100%;
+    }
+    #back:hover {
+      background-color: #45a49b;
+    }
+    #title {
+      position: relative;
+      left: 10%;
+      float: left;
+    }
+
+	</style>
+</head>
+<body class="grey lighten-2">
+	<div id="screen" class="z-depth-4">
+		<nav>
+	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
+            <a id="back" class="waves-effect waves-light" href="discovery.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i></a>
+  		      <div id="title">Post New Things</div> 
+  	      	</div>
+    	</nav>
+
+		<div class="row" id="input">
+    		<form class="col s12">      
+      			<div class="row">
+        			<div class="input-field col s12" id="inputbar">
+          				<input id="pro_name" type="text" maxlength="26px" class="input-bar">
+                  <input id="pro_name" type="text" maxlength="26px" class="input-bar">
+                  <input id="pro_name" type="text" maxlength="26px" class="input-bar">
+                  <input id="pro_name" type="text" maxlength="26px" class="input-bar">
+                  <input id="pro_name" type="text" maxlength="26px" class="input-bar">
+          				<label for="pro_name">Anything to Share?</label>
+        			</div>
+      			</div>
+      			 
+          	</form>
+  		</div >
+  		<div id="add">
+  		  <a class="btn-floating btn-large waves-effect waves-light teal lighten-2" href="discovery_runner_new.html">
+  		  	<i class="material-icons" style="font-size:40px;">add</i>
+  		  </a>
+  		</div>
+  	</div>
+</body>
+</html>
