@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log In</title>
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
- 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-    <script type="text/javascript" src="log_in.js"></script>
-	<style type="text/css">
+  <title>Log In</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <script type="text/javascript" src="log_in.js"></script>
+  <style type="text/css">
 
-		#screen {
-			margin-left: auto;
-			margin-right: auto;
-			height: 700px;
-			width: 400px;
-			background-color: white;
-		}
-	
-		#log-in {
-			text-align: right;
-			margin-right: 13%;
-		}
-		#avatar {
-			text-align: center;
-			margin-bottom: 40px;
-			margin-top: 50px;
-		}
-		#register {
-			text-align: right;
-			margin-left: 10px;
-		}
-		#namepswd {
-			margin-left: 7%;
-			margin-right: 7%;
-		}
-		#app-bar {
-			text-align: center;
-			font-size: 150%;
-		}
-	</style>
+    #screen {
+      margin-left: auto;
+      margin-right: auto;
+      height: 700px;
+      width: 400px;
+      background-color: white;
+    }
+  
+    #log-in {
+      text-align: right;
+      margin-right: 13%;
+    }
+    #avatar {
+      text-align: center;
+      margin-bottom: 40px;
+      margin-top: 50px;
+    }
+    #register {
+      text-align: right;
+      margin-left: 10px;
+    }
+    #namepswd {
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+    #app-bar {
+      text-align: center;
+      font-size: 150%;
+    }
+  </style>
 </head>
 <body class="grey lighten-2">
-	<div id="screen" class="z-depth-4">
+  <div id="screen" class="z-depth-4">
 
-		<nav>
-	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
-		        U-Run
-	      	</div>
-    	</nav>
+    <nav>
+          <div class="nav-wrapper teal lighten-2" id="app-bar">
+            U-Run
+          </div>
+      </nav>
 
-		<div id="avatar">
-			<img width="150px" height="150px" src="img/icon.png" style="border: 2px solid gray;">
-		</div>
-		
-		<div class="row" id="namepswd">
-    		<form class="col s12">      
-      			<div class="row">
-        			<div class="input-field col s12">
-          				<input id="username" type="text" class="validate" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')">
-          				<label for="username">Username</label>
-        			</div>
-      			</div>
-      			<div class="row">
-        			<div class="input-field col s12">
-          				<input id="password" type="password" class="validate">
-          				<label for="password">Password</label>
-        			</div>
-      			</div>     
-          	</form>
-  		</div>
+    <div id="avatar">
+      <img width="150px" height="150px" src="img/icon.png" style="border: 2px solid gray;">
+    </div>
+    
+    <div class="row" id="namepswd">
+        <form class="col s12">      
+            <div class="row">
+              <div class="input-field col s12">
+                  <input id="username" type="text" class="validate" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')">
+                  <label for="username">Username</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+              </div>
+            </div>     
+            </form>
+      </div>
 
-  		<div id="log-in">
-  			<a class="waves-effect waves-light btn" onclick="login()">Log in</a>
-  			<a id="register" href="#">Register</a>
-  		</div>		
+      <div id="log-in">
+        <a class="waves-effect waves-light btn" onclick="login()">Log in</a>
+        <a id="register" href="#">Register</a>
+      </div>    
 
-	</div>
+  </div>
 </body>
 </html>
