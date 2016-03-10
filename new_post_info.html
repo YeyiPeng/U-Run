@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> My Project</title>
+	<title> New Post Info</title>
  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -27,48 +27,30 @@
 	
 		#head_potrait {
 			position:relative;
-			left:-90px;
-			top:80px;
+			left:150px;
+			top:10px;
 			margin:5px;
 		}
 		#project_summary{
 			position:relative;
-			left:180px;
-			top:-50px;
-			max-width: 200px;
-			margin-right:20px;
+			left:55px;
+			top:10px;
+			max-width: 300px;
+			margin:10px;
 		}
 		#project_goal{
 			position:relative;
-			left:40px;
-			top:-20px;
-			max-width: 400px;
-			margin-right:20px;
-		}
-		.donation{
-			position:relative;
-			left:40px;
-			top:40px;
-		}
-
-		.volunteer{
-			position:relative;
-			left:230px;
-			top:-100px;
-		}
-
-		#do_num{
-			position:relative;
+			left:55px;
 			top:10px;
-			font-size: 20px;
-			color:#4db6ac;;
+			max-width: 300px;
+			margin:10px;
 		}
-		#peo_num{
+		#volunteer{
 			position:relative;
-			left:10px; 
-			top:12px;
-			font-size: 20px;
-			color:#4db6ac;
+			left:55px;
+			top:10px;
+			max-width: 300px;
+			margin:10px;
 		}
 		.tab {	
 			color: white;
@@ -85,16 +67,11 @@
 		}
 		#nav-bar{
 			position:relative;
-			top:-30px;
+			top:70px;
 		}
 		.material-icons {
 			padding-top: 10px;
 		}		
-		#exit {
-			float: right;
-			margin-top: -10px;
-			margin-right: 10px;
-		}
 		#title {
 			font-size: 30px;
 			margin-left: 30px;
@@ -105,37 +82,27 @@
 	<div id="screen" class="z-depth-4">
 		<nav>
 	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
-		        <span id="title">My Project</span>
-		        <a class="waves-effect waves-light" id="exit" href="log_in.html">
-	      			<i class="material-icons" id="left-arrow">exit_to_app</i>
-	    		</a>
+		        <span id="title">Looking for volunteers...</span>
+		    
 	      	</div>
     	</nav>
 
 		<div class="project">
     		<a href="＃！" class="collection-item">    			
     			<div class="summary"> 
-    				<span style="color:#4db6ac;font-size: 30px;position: relative;left:140px;top:-70px;">Summary</span> 
-    				<img src="img/charity_user.jpg" width="100px" height="100px" alt="" class="rectangle" id="head_potrait">
+    				
+    				<img src="img/user6.jpg" width="100px" height="100px" alt="" class="circle" id="head_potrait">
     					<div class="txt" id="project_summary">
-    						The project aims to call on donate $10,000 with every 500 miles accumulated by runners.
+    						We Need your help!! We are a non profit program trying to get children moving while trying out a new activity. 
     						</div>
   						<div class="txt" id="project_goal">
-  						Our goal is to decolop the fundation for amyotrophic lateral sclerosis and help the patients as much as we can do.
+  						We are looking for volunteers to help children learn to dance by teaching grades K-5 a simple routine. The goal is for children to build their self esteem and confidence. 
   						</div>	
+  						<div class="txt" id="volunteer">
+  						The volunteers would be working with another instructor to design a routine that is simple and easy for the children to learn. 
+  						</div>
     			</div>
-				
-					<div class="donation">
-    				<img src="img/donation.png" width="100px" height="100px" alt="" class="circle" id="donate_img">
-    					<span style="color:#4db6ac;font-size:20px;position:relative;left:-100px;top:-115px;">DONATION</span>
-  						<div id="do_num">2000/10000$</div>
-  					</div>
-
-  					<div class="volunteer">
-  					<img src="img/volunteer.png" width="100px" height="100px" alt="" class="circle" id="volunteer_img">	
-  						<span style="color:#4db6ac;font-size:20px;position:relative;left:-130px;top:-112px;">PEOPLE INVOLVED</span>
-  						<div id="peo_num">32 in total</div>	
-				    </div>	     			
+				   			
     		</a>	
   		</div>
 
@@ -147,7 +114,7 @@
 			    </div>
 		    </a>
 
-			<a class="tab" href="">
+			<a class="tab" href="project.html">
 				<div id="tab-div" class="col s4" style="background-color: #45a49b;">
 					<i class="material-icons">android</i>
 					<div id="tab-name">My Projects</div>
