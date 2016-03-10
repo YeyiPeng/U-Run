@@ -1,54 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Homepage</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<title>Discovery</title>
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>         
 	<style type="text/css">
-
 		#screen {
 			margin-left: auto;
 			margin-right: auto;
 			height: 700px;
 			width: 400px;
-			padding-top: 20px;
 			background-color: white;
 		}
-		#navi{
-			margin-left: 268px;
-			margin-top: -30px;
-		}
-		#word{
-			margin-top: 2px;
+		#app-bar {
 			text-align: center;
-			font-size: 25px;
+			font-size: 150%;
+	
 		}
-		#avatar2{
-			text-align: center;
-			margin-bottom: 130px;
-			margin-top: 20px;
-
-		}
-		#avatar{
-			margin-left: 5px;
-		}
-		.btn{
-			width: 130px;
-		}
-		#Discover{
-			float: right;
-		}
-		#friends{
-			float: left;
-		}
-		#share{
-			float: right;
-		}
-		#pro{
-			margin-left: 1px;
-		}
+		
 		.tab {	
 			color: white;
 			height: 150px;
@@ -62,87 +33,122 @@
 		#tab-div:hover{
 			background-color: #45a49b;
 		}
+		#nav-bar{
+			margin-top: 35px;
+			position:relative;
+			top:90px;
+		}
 		.material-icons {
 			padding-top: 10px;
-		}	
-		#button{
-			margin-top: -12px;
-			margin-bottom: 0;
 		}
-		.btn-floating.btn-large{
-			width: 250px;
-			height: 250px;
-			background-image:url("img/mileage.jpg");
-			font-size: 40px;
-			padding-top: 100px;
+
+		.info {
+			color: black;
+			font-size: 10px;
+			margin-left: 70px;
 		}
-		#exit {
-			float: right;
-			margin-top: -65px;
-			margin-right: 10px;
-			color: #4db6ac;
+		.title {
+			font-size: 15px;
+			font-weight: bold;
+		}
+		#head_potrait {
+			float: left;
+		}
+		#back{
+			float: left;
+			background-color: #4db6ac;
+			width: 90px;
+			height: 100%;
+		}
+		#back:hover {
+			background-color: #45a49b;
+		}
+		#icon1 {
+			margin-top: -8px;
+		}
+		#title {
+			position: relative;
+			left: 17%;
+			float: left;
 		}
 	</style>
 </head>
 <body class="grey lighten-2">
 	<div id="screen" class="z-depth-4">
-		<p id="word">Project Accomplished</p>
-		<a class="waves-effect waves-light" id="exit" href="log_in.html">
-	      	<i class="material-icons" id="left-arrow">exit_to_app</i>
-	    </a>
-		<div class="progress">
-			<div class="determinate" style="width: 70%"></div>
-		</div>
-		<i id="navi"class="material-icons" >navigation</i>
-		<div id="avatar">
-			<!--<i id="identity" class="material-icons">account_circle</i>-->
-			<img width="50px" height="50px" src="img/touxiang.jpg" class="circle">
-		</div>
-		<div id="avatar2">
-			<a class="btn-floating btn-large waves-effect waves-light blue">
-				150 Miles
+		<nav>
+			
+	      	<div class="nav-wrapper teal lighten-2" id="app-bar">
+	      		
+	      		<a id="back" class="waves-effect waves-light" href="homepage.html"><i class="material-icons" id="icon1">keyboard_arrow_left</i></a>
+	      		<div id="title">Discovery</div>
+	      	</div>
+    	</nav>
+
+		<div class="collection">
+    	<a href="post_new_info_runner.html" class="collection-item">    			
+    			<img src="img/user1.jpg" width="50px" height="50px" alt="" class="circle" id="head_potrait">
+    			<div class="title" style=""></div>
+    			<p class="info">
+    				<span class="title">Someone wants to work out together... </span><br> 03/02/2016 11:30 by Sherry
+    				<span class="new badge">1</span>
+				</p>   			
+    		</a>
+    		   <a href="#!" class="collection-item">    			
+    			<img src="img/user6.jpg" width="50px" height="50px" alt="" class="circle" id="head_potrait">
+    			<div class="title" style=""></div>
+    			<p class="info">
+    				<span class="title">Love running? Join us!</span><br> 02/23/2016 11:30 by Leo
+    			
+				</p>   			
+    		</a>
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/user2.jpg" width="50px" height="50px" alt="" class="circle" id="head_potrait">
+    			<div class="title" style=""></div>
+    			<p class="info">
+    				<span class="title">Come and join us!</span><br> 02/20/2016 22:02 by Frank
+				</p>   			
+    		</a>
+    	
+    		<a href="#!" class="collection-item">    			
+    			<img src="img/user4.jpg" width="50px" height="50px" alt="" class="circle" id="head_potrait">
+    			<div class="title" style=""></div>
+    			<p class="info">
+    				<span class="title">Volunteers needed to play game</span><br> 02/02/2016 9:12 by Taylor
+				</p>   			
+    		</a>
+    		    <a href="#!" class="collection-item">    			
+    			<img src="img/user5.jpg" width="50px" height="50px" alt="" class="circle" id="head_potrait">
+    			<div class="title" style=""></div>
+    			<p class="info">
+    				<span class="title">Help serve kids by becoming a sports coach</span><br> 02/01/2016 9:29 by Cindy
+				</p>   			
+    		    </a>
+    		
+  		
+  		</div>
+  		<div class="row z-depth-1" id="nav-bar">
+    		<a class="tab" id="chat" href="chat.html">
+			    <div id="tab-div" class="col s4">
+				    <i class="material-icons">chat</i>
+				    <div id="tab-name">Chat</div>
+			    </div>
 		    </a>
+
+			<a class="tab" href="post_new_runner.html">
+				<div id="tab-div" class="col s4">
+					<i class="material-icons">add</i>
+					<div id="tab-name">New Post</div>
+				</div>
+			</a>
+
+			<a class="tab" href="homepage.html">
+				<div id="tab-div" >
+				    <i class="material-icons">android</i>
+				    <div id="tab-name">My Projects</div>
+				</div>
+			</a>
 		</div>
-		<div id="button"class="row">
-		           <a class="tab" id="chat" href="chat.html">
-			           <div id="tab-div" class="col s4">
-				          <i class="material-icons">supervisor_account</i>
-				             <div id="tab-name">Friends</div>
-			           </div>
-		           </a>
 
-			       <a class="tab white" href="discovery.html">
-				       <div id="tab-div" class="col s4 offset-s4">
-					      <i class="material-icons">explore</i>
-					         <div id="tab-name">Discovery</div>
-				       </div>
-			       </a>
-		</div>
-
-		<div id="button1"class="row">
-			<div class="row z-depth-1">
-		           <a class="tab" id="chat" href="confirm.html">
-			           <div id="tab-div" class="col s4">
-				          <i class="material-icons">update</i>
-				             <div id="tab-name">Data</div>
-			           </div>
-		           </a>
-
-			       <a class="tab">
-				       <div id="tab-div" class="col s4" style="background-color: #45a49b;">
-					      <i class="material-icons">android</i>
-					         <div id="tab-name">Projects</div>
-				       </div>
-			       </a>
-
-			       <a class="tab" href="">
-				       <div id="tab-div" >
-				          <i class="material-icons">accessibility</i>
-				             <div id="tab-name">Share</div>
-				       </div>
-			       </a>
-		      </div>
-		</div>
 	</div>
 </body>
 </html>
